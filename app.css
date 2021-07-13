@@ -136,6 +136,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.svgIcon {
+  margin-top: 25px;
+}
 .main {
   display: flex;
   flex-direction: column;
