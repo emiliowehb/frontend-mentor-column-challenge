@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  text-align: left;
+}
+.sectionHeading {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 25px;
+  color: hsl(0, 0%, 95%);
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 12px 0 0;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 12px 12px;
+}
+.sectionParagraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.margin {
+  margin-left: 40px;
+  margin-bottom: 35px;
+}
+
+.button {
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 400ms ease-in-out;
+  margin-left: 40px;
+  margin-bottom: 35px;
+}
+.button a {
+  text-decoration: none;
+  transition: color 400ms ease-in-out;
+}
+.sedanButton {
+  color: hsl(31, 77%, 52%);
+}
+.suvButton {
+  color: hsl(184, 100%, 22%);
+}
+.luxButton {
+  color: hsl(179, 100%, 13%);
+}
+
+.button:hover,
+.button:focus {
+  background-color: transparent;
+}
+.button a:hover,
+.button a:focus {
+  color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 800px) {
+  .main {
+    flex-direction: row;
+    max-width: 800px;
+    max-height: 100%;
+  }
+  .sedans {
+    border-radius: 12px 0 0 12px;
+  }
+  .suvs {
+    border-radius: 0;
+  }
+  .luxury {
+    border-radius: 0 12px 12px 0;
+  }
+}
